@@ -11,7 +11,7 @@
 		<tr>
 
 			<td><center><a href="{% url 'ishar:int_health' %}"><h3>Integrative Health</h3></a></center></td>
-			<td><center><a href="#"><h3>Integrative Culture</h3></a></center></td>
+			<td><center><a href="{% url 'ishar:int_culture' %}"><h3>Integrative Culture</h3></a></center></td>
 		</tr>
 		<tr>
 			<td><center><p>Integrative Health is about being healthy in untraditional ways or something like that</p></center></td>
@@ -19,9 +19,9 @@
 		</tr>
 	</table>
 	<center>
-		<a href="#"><h3>Journal Portal</h3></a>
+		<a href="{% url 'ishar:journal' %}"><h3>Journal Portal</h3></a>
 		<p>Some random stuff about what the journal portal is...</p>
-		<a href="#"><h3>Barbara Marx Hubbard Journals</h3></a>
+		<a href="{% url 'ishar:bmh_journal' %}"><h3>Barbara Marx Hubbard Journals</h3></a>
 		<p>Some random stuff about what the barbara marx hubbard journals are...</p>
 		<a href="{% url 'ishar:cosmology' %}"><h3>Comparative World Cosmologies</h3></a>
 		<p>Some random stuff about what the journal portal is...</p>

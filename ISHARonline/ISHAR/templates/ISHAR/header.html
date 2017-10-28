@@ -36,15 +36,15 @@
 
 	<div class="w3-bar w3-light-grey">
 
-	  <a href="#" class="w3-bar-item w3-button">Home</a>
+	  <a href="{% url 'ishar:index' %}" class="w3-bar-item w3-button">Home</a>
 
 	  <div class="w3-dropdown-hover">
 	    <button class="w3-button">ISHAR Libraries</button>
 	    <div class="w3-dropdown-content w3-bar-block w3-card-4">
 	      <a href="{% url 'ishar:int_health' %}" class="w3-bar-item w3-button">Integrative Health</a>
-	      <a href="#" class="w3-bar-item w3-button">Integrative Culture</a>
-	      <a href="#" class="w3-bar-item w3-button">Journal Portal</a>
-	      <a href="#" class="w3-bar-item w3-button">Barbara Marx Hubbard Journals</a>
+	      <a href="{% url 'ishar:int_culture' %}" class="w3-bar-item w3-button">Integrative Culture</a>
+	      <a href="{% url 'ishar:journal' %}" class="w3-bar-item w3-button">Journal Portal</a>
+	      <a href="{% url 'ishar:bmh_journal' %}" class="w3-bar-item w3-button">Barbara Marx Hubbard Journals</a>
 	      <a href="{% url 'ishar:cosmology' %}" class="w3-bar-item w3-button">Comparative World Cosmologies</a>
 	    </div>
 	  </div>
@@ -52,9 +52,9 @@
 	  <div class="w3-dropdown-hover">
 	    <button class="w3-button">About Us</button>
 	    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-	      <a href="#" class="w3-bar-item w3-button">Mission</a>
-	      <a href="#" class="w3-bar-item w3-button">Supervisory Board</a>
-	      <a href="#" class="w3-bar-item w3-button">Affiliates</a>
+	      <a href="{% url 'ishar:mission' %}" class="w3-bar-item w3-button">Mission</a>
+	      <a href="{% url 'ishar:super_board' %}" class="w3-bar-item w3-button">Supervisory Board</a>
+	      <a href="{% url 'ishar:affilliates' %}" class="w3-bar-item w3-button">Affiliates</a>
 	    </div>
 	  </div>
 
