@@ -73,6 +73,23 @@ def brain(request):
 def mind(request):
 	return render(request, 'ISHAR/consciousness-mind.html', {})
 
+def search(request):
+	search_param = request.POST['search_param']
+	article_list_title = list(Article.objects.filter(title__contains=search_param))
+	article_list_author = list(Article.objects.filter(author__contains=search_param))
+	article_list_tags = list(Article.objects.filter(tags__contains=search_param))
+	article_list_abstract = list(Article.objects.filter(abstract__contains=search_param))
+	master_list = list(set().union(article_list_title, article_list_abstract, article_list_tags, article_list_author))
+	
 
+	paginator = Paginator(master_list, 10)
 
-
+	page = request.GET.get('page')
+	try:
+		articles = paginator.page(page)
+	except PageNotAnInteger:
+		articles = paginator.page(1)
+	except EmptyPage:
+		articles = paginator.page(paginator.num_pages)
+	
+	return render(request, 'ISHAR/articleList.html', {'article_list': articles})

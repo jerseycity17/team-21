@@ -75,8 +75,9 @@
 				<img src="http://www.isharonline.org/sites/default/files/ishar_cf_logo_3.site__1.png">
 			</td>
 			<td style="vertical-align: bottom; padding-left: 10%; padding-right: 4%; padding-bottom: 1%">
-				<form>
-					<input type="text" name="search" placeholder="Ask Chopra anything...">
+				<form action="{% url 'ishar:search' %}" method="post">
+					{% csrf_token %}
+					<input type="text" name="search_param" placeholder="Ask Chopra anything...">
 				</form>
 			</td>
 		</tr>

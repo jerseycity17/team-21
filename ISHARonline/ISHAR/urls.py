@@ -19,9 +19,9 @@ urlpatterns = [
     url(r'^BMHJournal/$', views.bmh_journal, name='bmh_journal'),
     url(r'^Consciousness/$', views.consciousness, name='consciousness'),
     url(r'^Consciousness/The_Hard_Problem/$', views.hard_problem, name='hard_problem'),
-    url(r'^Consciousness/Philosophy_of_Mind$', views.philosophy_mind, name='philosophy_mind'),
-    url(r'^Consciousness/The_Brain$', views.brain, name='brain'),
-    url(r'^Consciousness/The_Mind$', views.mind, name='mind'),
-
+    url(r'^Consciousness/Philosophy_of_Mind/$', views.philosophy_mind, name='philosophy_mind'),
+    url(r'^Consciousness/The_Brain/$', views.brain, name='brain'),
+    url(r'^Consciousness/The_Mind/$', views.mind, name='mind'),
+    url(r'^Search/$', views.search, name='search')
 
 ]
