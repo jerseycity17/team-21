@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^Consciousness/Philosophy_of_Mind/$', views.philosophy_mind, name='philosophy_mind'),
     url(r'^Consciousness/The_Brain/$', views.brain, name='brain'),
     url(r'^Consciousness/The_Mind/$', views.mind, name='mind'),
+    url(r'^Honorarium/$', views.honorarium, name='honorarium'),
     url(r'^Search/$', views.search, name='search')
 
 ]
