@@ -7,6 +7,13 @@ class Category(models.Model):
 	def __str__(self):
 		return self.category_name
 
+class SubCategory(models.Model):
+	category_name = models.CharField(max_length=255)
+	parent_category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
+
+	def __str__(self):
+		return self.category_name
+
 
 class Article(models.Model):
 	category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
