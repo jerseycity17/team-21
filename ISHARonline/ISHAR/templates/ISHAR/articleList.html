@@ -1,9 +1,44 @@
 {% include "ISHAR/header.html" %}
 
-<ul>
-	{% for article in article_list %}
-		<li><a href="{% url 'ishar:article_desc' article.id %}">{{ article.title }}</li>
-	{% endfor %}
-</ul>
+</br></br>
+
+{% for article in article_list %}
+	<table cellspacing="10" style="border: 1px solid white;border-radius: 25px;padding: 10px; width:100%">
+		<thead>
+			<tr>
+				<th style="text-align: center;" colspan="2"><a href="{% url 'ishar:article_desc' article.id %}">{{ article.title }}</a></th>
+			</tr>
+		</thead>
+		<tr>
+			<td ><b>Publication Title: </b>{{ article.pub_title }}</td>
+		</tr>
+		<tr>
+			<td><b>Abstract: </b>{{ article.short_abstract }}</td>
+		</tr>
+		<tr>
+			<td><b>Tags: </b>{{ article.tags }}</td>
+		</tr>
+		<tr>
+			<td><b>Author(s): </b>{{ article.author }}</td>
+		</tr>
+	</table>
+	</br></br>
+{% endfor %}
+
+<div class="pagination">
+	<span class="step-links">
+		{% if article_list.has_previous %}
+			<a href="?page={{ article_list.previous_page_number }}">previous</a>
+		{% endif %}
+
+		<span class="current">
+			Page {{ article_list.number }} of {{ article_list.paginator.num_pages }}
+		</span>
+
+		{% if article_list.has_next %}
+			<a href="?page={{ article_list.next_page_number }}">next</a>
+		{% endif %}
+	</span>
+</div>
 
 {% include "ISHAR/footer.html" %}

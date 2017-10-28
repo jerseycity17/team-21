@@ -1,5 +1,6 @@
 from django.shortcuts import get_list_or_404, get_object_or_404, render
 from django.http import HttpResponse
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import Article, Category, SubCategory
 
@@ -29,8 +30,18 @@ def article_desc(request, article_id):
 	return render(request, 'ISHAR/articleDesc.html', {'article' : article})
 
 def article_list(request, category):
-	article_list = get_list_or_404(Article, category__category_name=category)[:10]
-	return render(request, 'ISHAR/articleList.html', {'article_list': article_list})
+	article_list = get_list_or_404(Article, category__category_name=category)
+	paginator = Paginator(article_list, 10)
+
+	page = request.GET.get('page')
+	try:
+		articles = paginator.page(page)
+	except PageNotAnInteger:
+		articles = paginator.page(1)
+	except EmptyPage:
+		articles = paginator.page(paginator.num_pages)
+	
+	return render(request, 'ISHAR/articleList.html', {'article_list': articles})
 
 def category(request, category):
 	return render(request, 'ISHAR/categoryDesc.html', {'category' : category})

@@ -1,5 +1,162 @@
 {% include "ISHAR/header.html" %}
 
-<h1><a href="{% url 'ishar:article_list' category %}">{{ category }} Article List</a></h1>
+<body>
+
+<h3><b>{{ category }}</b></h3>
+
+<center><h3><a class="button" href="{% url 'ishar:article_list' category %}">Article List</a></h3></center>
+
+{% if category == "Meditation" %}
+<center>
+<p><span style="text-decoration: underline;"><strong><span style="font-size: x-large; font-family: 'book antiqua', palatino;"><img src="http://isharonline.org/sites/default/files/resize/bodhidharmayoshitoshi1887-283x413.jpg" alt="" width="283" height="413" title="" style=""></span></strong></span></p>
+</center>
+<p style="margin-top: 0px; margin-bottom: 1.2em; color: #140707; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14.9940004348755px; line-height: 17.9928016662598px;"><span style="text-decoration: underline; color: #ffffff;"><strong><span style="font-size: medium; font-family: 'book antiqua', palatino;">Functional Summary</span></strong></span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<table style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; border: 0px; font-size: 0.857em; margin-top: 10px; width: 560px; color: #140707; height: 259px;" width="988" border="1" cellspacing="0" cellpadding="0">
+<tbody style="border-top-width: 1px; border-top-style: solid; border-top-color: #cccccc;">
+<tr style="background: rgba(0, 0, 0, 0.0627451);">
+<td style="padding: 4px 9px; border: 1px solid #ffffff;" width="107">
+<h4 style="margin-top: 1em; margin-bottom: 0.5em; font-weight: inherit;"><span style="color: #ffffff;"><strong><span style="font-size: small; font-family: verdana, geneva;">Modality</span></strong></span></h4>
+</td>
+<td style="padding: 4px 9px; border: 1px solid #ffffff;" width="126">
+<ul style="margin-top: 1em; margin-bottom: 1em; margin-left: 0px; padding-bottom: 0.25em; padding-left: 2.5em;">
+<li>
+<p style="margin-top: 0px; margin-bottom: 1.2em;"><span style="font-family: verdana, geneva; font-size: small; color: #ffffff;"><span style="line-height: 13.91px;">Mind/Body Practices</span></span></p>
+</li>
+</ul>
+</td>
+<td style="padding: 4px 9px; border-top-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-color: #ffffff;" width="238">
+<p style="margin-top: 0px; margin-bottom: 1.2em;"><span style="font-family: verdana, geneva; font-size: small; color: #ffffff;">&nbsp;<span style="line-height: 13.9100008010864px;">Pracitioners train the mind to induce a mode of consciousness that is relaxed and controlled.</span></span></p>
+</td>
+</tr>
+<tr style="background: rgba(0, 0, 0, 0.0627451);">
+<td style="padding: 4px 9px; border: 1px solid #ffffff;" width="107">
+<h4 style="margin-top: 1em; margin-bottom: 0.5em; font-weight: inherit;"><span style="color: #ffffff;"><strong><span style="font-size: small; font-family: verdana, geneva;">Intention</span></strong></span></h4>
+</td>
+<td style="padding: 4px 9px; border: 1px solid #ffffff;" width="126">
+<ul style="margin-top: 1em; margin-bottom: 1em; margin-left: 0px; padding-bottom: 0.25em; padding-left: 2.5em;">
+<li>
+<p style="margin-top: 0px; margin-bottom: 1.2em;"><span style="font-family: verdana, geneva; font-size: small; color: #ffffff;">&nbsp;<span style="line-height: 13.91px;">Restoration</span></span></p>
+</li>
+<li>
+<p style="margin-top: 0px; margin-bottom: 1.2em;"><span style="font-family: verdana, geneva; font-size: small; color: #ffffff;">&nbsp;<span style="line-height: 13.91px;">Prevention</span></span></p>
+</li>
+<li><span style="font-family: verdana, geneva; font-size: small; color: #ffffff;"><span style="line-height: 13.91px;">Optimization</span></span></li>
+</ul>
+</td>
+<td style="padding: 4px 9px; border-top-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-color: #ffffff;" width="238">
+<p style="margin-top: 0px; margin-bottom: 1.2em;"><span style="font-family: verdana, geneva; font-size: small; color: #ffffff;">Meditation may be used with the intent to treat specific problems (stress, depression, etc), improve one's conscious/spiritual wellbeing or improve overall health.</span></p>
+</td>
+</tr>
+<tr style="background: rgba(0, 0, 0, 0.0627451);">
+<td style="padding: 4px 9px; border: 1px solid #ffffff;" width="107">
+<h4 style="margin-top: 1em; margin-bottom: 0.5em; font-weight: inherit;"><span style="color: #ffffff;"><strong><span style="font-size: small; font-family: verdana, geneva;">Geo-Cultural</span></strong></span></h4>
+</td>
+<td style="padding: 4px 9px; border: 1px solid #ffffff;" width="126">
+<ul style="margin-top: 1em; margin-bottom: 1em; margin-left: 0px; padding-bottom: 0.25em; padding-left: 2.5em;">
+<li>
+<p style="margin-top: 0px; margin-bottom: 1.2em;"><span style="font-size: small; font-family: verdana, geneva; color: #ffffff;">Universal</span></p>
+</li>
+</ul>
+</td>
+<td style="padding: 4px 9px; border-top-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-bottom-style: solid; border-left-style: solid; border-color: #ffffff;" width="238">
+<p style="margin-top: 0px; margin-bottom: 1.2em;"><span style="font-family: verdana, geneva; font-size: small; color: #ffffff;">&nbsp;<span style="line-height: 13.9100008010864px;">Present in numerous cultures in various forms.</span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline; font-size: large;"><strong><span style="font-family: 'book antiqua', palatino;">Definition</span></strong></span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">The Oxford Dictionary defines “to meditate” as: “To think deeply or focus one’s mind for a period of time, in silence or with the aid of chanting, for religious or spiritual purposes or as a method of relaxation.” This is perhaps as good a formal starting point as any to begin the consideration of the term’s meaning within the present context of “integrative studies,” with an orientation towards health. </span></p>
+<p><span style="font-family: 'book antiqua', palatino; font-size: medium;">The word meditation carries different meanings in different contexts. Meditation has been practiced since antiquity as a component of numerous religious traditions and beliefs. Meditation often involves an internal effort to self-regulate the mind in some way. Meditation is often used to clear the mind and ease many health concerns, such as high blood pressure, depression, and anxiety. It may be done sitting, or in an active way—for instance, Buddhist monks involve awareness in their day-to-day activities as a form of mind-training. Prayer beads or other ritual objects are commonly used during meditation in order to keep track of or remind the practitioner about some aspect of the training.</span></p>
+<p><span style="font-family: 'book antiqua', palatino; font-size: medium;">Meditation may involve generating an emotional state for the purpose of analyzing that state—such as anger, hatred, etc.—or cultivating a particular mental response to various phenomena, such as compassion. The term "meditation" can refer to the state itself, as well as to practices or techniques employed to cultivate the state. Meditation may also involve repeating a mantra and closing the eyes. The mantra is chosen based on its suitability to the individual meditator. Meditation has a calming effect and directs awareness inward until pure awareness is achieved, described as "being awake inside without being aware of anything except awareness itself." In brief, there are dozens of specific styles of meditation practice, and many different types of activity commonly referred to as meditative practices.</span></p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><strong style="font-size: large; line-height: 20.0063056945801px;"><span style="font-family: 'book antiqua', palatino;">Research Summary</span></strong></span></p>
+<p><span style="font-family: 'book antiqua', palatino; font-size: medium;">Many studies have investigated meditation for different conditions, and there’s evidence that it may reduce blood pressure as well as symptoms of irritable bowel syndrome and flare-ups in people who have had ulcerative colitis. It may ease symptoms of anxiety and depression, and may help people with insomnia. Meditation also may lower the incidence, duration, and severity of acute respiratory illnesses (such as&nbsp;influenza).</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: 'book antiqua', palatino; font-size: medium;">Read more about meditation for these&nbsp;conditions:</span></p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="font-family: 'book antiqua', palatino; font-size: medium;">For High Blood&nbsp;Pressure</span></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Results of a 2009 NCCIH-funded trial involving 298 university students suggest that practicing Transcendental Meditation may lower the blood pressure of people at increased risk of developing high blood&nbsp;pressure.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">The findings also suggested that practicing meditation can help with psychological distress, anxiety, depression, anger/hostility, and coping&nbsp;ability.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">A literature review and scientific statement from the American Heart Association suggest that evidence supports the use of Transcendental Meditation (TM) to lower blood pressure. However, the review indicates that it’s uncertain whether TM is truly superior to other meditation techniques in terms of blood-pressure lowering because there are few head-to-head&nbsp;studies.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="font-family: 'book antiqua', palatino; font-size: medium;">For Irritable Bowel&nbsp;Syndrome</span></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Results of a 2011 NCCIH-funded trial that enrolled 75 women suggest that practicing mindfulness meditation&nbsp;for 8 weeks reduces the severity of irritable bowel syndrome (IBS)&nbsp;symptoms.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">A 2013 review concluded that mindfulness training improved IBS patients’ pain and quality of life but not their depression or anxiety. The amount of improvement was&nbsp;small.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="font-family: 'book antiqua', palatino; font-size: medium;">For Ulcerative&nbsp;Colitis</span></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">In a 2014 pilot study, 55 adults with ulcerative colitis in remission were divided into two groups. For 8 weeks, one group learned and practiced&nbsp;mindfulness-based stress reduction&nbsp;(MBSR) while the other group practiced a placebo procedure. Six and&nbsp;twelve months later, there were no significant differences between the&nbsp;two groups in the course of the disease, markers of inflammation, or any psychological measure except perceived stress during flare-ups. The researchers concluded that MBSR might help people in remission from moderate to moderately severe disease—and maybe reduce rates of flare-up from&nbsp;stress.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="font-family: 'book antiqua', palatino; font-size: medium;">For Anxiety, Depression, and&nbsp;Insomnia</span></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">A 2014 literature review of 47 trials in 3,515 participants suggests that mindfulness meditation programs show moderate evidence of improving anxiety and depression. But the researchers found no evidence that meditation changed health-related behaviors affected by stress, such as substance abuse and&nbsp;sleep.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">A 2012 review of 36 trials found that 25 of them reported&nbsp;better outcomes for symptoms of anxiety in the meditation groups compared to control&nbsp;groups.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">In a small, NCCIH-funded study, 54 adults with chronic insomnia learned mindfulness-based stress reduction (MBSR), a form of MBSR specially adapted to deal with insomnia (mindfulness-based therapy for insomnia, or MBTI), or a self-monitoring program. Both meditation-based programs aided sleep, with MBTI providing a significantly greater reduction in insomnia severity compared with&nbsp;MBSR.</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="font-family: 'book antiqua', palatino; font-size: medium;">For Smoking&nbsp;Cessation</span></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Findings from a 2013 review suggest that meditation-based therapies may help people quit smoking; however, the small number of available studies&nbsp;is insufficient to determine rigorously if meditation is effective for&nbsp;this.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">A 2011&nbsp;trial comparing mindfulness training with a standard behavioral smoking cessation treatment found that individuals who received mindfulness training showed a greater rate of reduction in cigarette use immediately after treatment and at 17-week&nbsp;followup.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Results of a 2013 brain imaging study suggest that mindful attention reduced the craving to smoke, and also that it reduced activity in a craving-related region of the&nbsp;brain.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">However, in a second 2013 brain imaging study, researchers observed that a 2-week course of meditation (5 hours total) significantly reduced smoking, compared with relaxation training, and that it increased activity in brain areas associated with&nbsp;craving.&nbsp;</span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;"><span style="font-family: 'book antiqua', palatino; font-size: medium;">Other&nbsp;Conditions</span></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Results from a 2011 NCCIH-funded study of 279 adults who participated in an 8-week Mindfulness-Based Stress Reduction (MBSR) program found that changes in&nbsp;spirituality were associated with better mental health and quality of&nbsp;life.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Data from a 2013 literature review concluded that practicing mindfulness meditation may enhance immune function, particularly among patients with cancer or&nbsp;HIV/AIDS.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Guidelines from the American College of Chest Physicians published in 2013 suggest that MBSR and meditation may help to reduce stress, anxiety, pain, and depression while enhancing mood and self-esteem in people with lung&nbsp;cancer.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Clinical practice guidelines issued in 2014 by the Society for Integrative Oncology (SIC) recommend meditation as supportive care to reduce stress, anxiety, depression, and fatigue in patients treated for breast cancer. The SIC also recommends its use to improve quality of life in these&nbsp;people.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Meditation-based programs may be helpful in reducing common menopausal symptoms, including the frequency and intensity of hot flashes, sleep and mood disturbances, stress, and muscle and joint pain. However, differences in study designs mean that no firm conclusions can be&nbsp;drawn.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Because only a few studies have been conducted on the effects of meditation for attention deficit hyperactivity disorder (ADHD), there isn’t sufficient evidence to support its use for this&nbsp;condition.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">A 2014 research review suggested that mind and body practices, including meditation, reduce chemical identifiers of inflammation and show promise in helping to regulate the immune&nbsp;system.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">Results from a 2013 NCCIH-supported study involving 49 adults suggest that 8 weeks of mindfulness training may reduce stress-induced inflammation better than a health program that includes physical activity, education about diet, and music&nbsp;therapy.</span></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;">There’s some evidence that forms of meditation may help with chronic pain, but research has shown mixed&nbsp;results.</span></li>
+</ul>
+<p><a href="https://nccih.nih.gov/health/meditation/overview.htm#hed3"><span style="font-family: 'book antiqua', palatino; font-size: small;">Cited from NCCIH</span></a></p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;"><strong style="font-size: large; line-height: 20.0063056945801px;"><span style="font-family: 'book antiqua', palatino;">Research History</span></strong></span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">For many years the basic definitional framework in the those sectors of Western science and scholarship that were investigating meditation utilized a very basic yet helpful one in which there were a limited number of key psychophysical factors from upon which a meditation form was based. In this model, there is an initial action taken to lower nervous system arousal from a day-to-day style and levels – to lower the “noise-to-signal ratio” of the mind and body – by sitting still, slowing the respiration, and adopting a relaxed yet vigilant style of attention [It should be noted here that it is technically almost impossible to speak of “meditation” without speaking in the same context of “yoga,” as most forms of meditation are practiced in conjunction with respiratory control practices which are technically yoga; and most yogic practices are practiced with attentional and other forms of cognitive/affective control, which can be thought of technically as meditation; nevertheless, see entry on Yoga]. Attention is then directed in one of two fundamental directions: either to one point, or “one-pointed concentration meditation”; or, rather than onto a point, attention is left open, widely and evenly distributed, throughout the attentional/perceptual field, or this form being what is often called “mindfulness meditation.”</span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">While such behaviors and attitudinal dispositions may seem fairly modest, benign, and prosaic, with practice and over time – and in many cases not necessarily too much practice and time – such actions may result in many benefits, including for example significantly leading to neuronal growth in the brain, reversing age-related atrophy; the ability to control pain to a level equal to or greater than morphine and other opioids; and enhancement of the immune system, in which the age-related remodeling of immunity towards a pathological pro-inflammatory profile is reversed, resulting in a system more capable of counteracting both infectious and degenerative challenges (see below for all points made in this entry, Bibliographical Section).&nbsp;</span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">In an effort to better understand the neurophysiology of meditation, researchers applied the electroencephalogram or EEG to the study of meditation, and it was soon found that these two basic forms of meditation produced EEG readings which were in line with the claims for the meditation, and, overall, the phenomenological accounts of meditation from the traditions of origination as well as from contemporary meditators. Both the one-pointed concentration and mindfulness forms generally produced readings which reflected relaxation, primarily theta and alpha EEG (4-8 Hz (or cycles per second) and 8-12 Hz, respectively, reflecting a relatively slow level of overall brain activity), and a much lower presence of other rhythms, such as the very slow or deep sleep- associated delta wave (0-4 Hz), or the higher frequency highly activated waves generally associated with nervous system arousal, and beta and gamma waves (12-40 Hz, and 40-100 Hz, respectively).&nbsp;</span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">One might say that this primary initial work was done in the “classical period” of meditation research in the 1960’s through the early 1980’s, focusing often on the specific popular form known as Transcendental Meditation (which is claimed to start off primarily as a form of one-pointed concentration), along with some more popular forms of mindfulness meditation (especially “Insight,” or vipassana meditation). It was found (and continues to be found) that these forms of meditation may in fact to lead to a wide range of affective, cognitive, sensory-perceptual, and physiological enhancements. After this period, technology made major advances, including more sophisticated EEG and other psychophysiological recordings such as EKG, skin resistance, blood flow; and new forms of technology, such as MRI, PET, and MEG, began to be incorporated. So, whereas using EEG and these other standard forms of psychophysiological measuring, Herbert Benson was able to ingeniously discover and identify the “relaxation response” – a sort of “classical” countering response to Cannon’s “fight of flight” stress response – the era of technologies such as PET and MRI opened up the discovery of the deep-seated “default state network” of the brain, which is in an anti-correlated structural relationship with action- or stress-oriented system of the brain.&nbsp;</span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">In addition to the technological capacity for more thorough and sophisticated scientific investigation, knowledge of a larger number of types or forms of meditation began to become available in the Western, or cosmopolitan, cultural and research contexts which has begun to broaden the Western cosmopolitan knowledge of the very wide-ranging field of meditation, although this knowledge has tended to lag far behind the reality, even within circles of scientists who conduct research, as well as with scholars, practitioners, and teachers, all of whom tend to specialize in one or several forms of meditation. Many of these newly learned of forms of meditation come from the same traditions – often India, China/East Asia, and Tibet – as the ones which made their appearance on the Western cultural and scientific stage earlier, in the 1960’s and of course even before that; while many others have been recognized in the West more recently, after the earlier “wave,” and come from other cultural, religious, and spiritual traditions.&nbsp;</span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">In terms of the former, there are types of meditation which are explicitly and specifically practiced to utilize, cultivate, and enhance mental imagery (including multisensory imagery), and the potentially enhancing power of such imagery on the body and brain; analytic capacity (“analytic meditation”); the reading, understanding, and transformational power of religious and philosophical texts (textual meditation); memory capacity (mnemonic forms of meditation), not only in terms of volume, but also in terms of the transformational capacity of the memorized material; higher forms of affect, such as compassion (compassion meditation) or euphoria (bliss meditation); and others. Quite importantly too, it has been discovered particularly in the last decade or so, that these forms of meditation can, through repeated practice, lead to long-lasting positive changes in the brain/nervous system by activating the latent capacity for what is known as “neuroplasticity,” or the capacity for the nervous system to manifest training-induced changes (these may include neuronal growth, dendritic arborization, enhanced synaptic plasticity and inter-neuronal connectivity, others).&nbsp;</span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">Still other forms of meditation are specifically and explicitly “designed” to lead to other forms of enhancements. So there are forms of “energy meditation” which purport to enable a practitioner to discover within her/himself, develop control over, and utilize putative forms of endogenous energy inside the human body (prana and kundalini in Indian traditions; qi in East Asian traditions; baraka in many Islamic middle eastern traditions; “n’um” in Kalahari and related South African traditions). While from a scientific standpoint it may not yet be the case that there is a satisfactory bidirectional understanding between scientific systems on the ultimate nature of these forms of energy, there is a large body of documentary and other forms of evidence in support of the general construct of these endogenous energy forms, as well as some compelling research in progress, and much more to be done. &nbsp;</span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">Along with these controversial forms of “energy-activating” meditation – and most likely somehow significantly related – are other forms of controversial meditation (again, keeping in mind the close connection between meditation and yoga), what could be called “consciousness exploration” forms of meditation. These include forms of meditation designed to bring conscious awareness into the state of dreaming sleep (“lucid dreaming”), into dreamless sleep (“lucid sleeping”), and potentially even into less overtly “conscious” states (in this regard it should be noted that Cambridge University researchers recently demonstrated conscious awareness in some patients in a persistent vegetative state). But perhaps most controversial are meditative states in which the practitioner attempts to project the individual consciousness outside of the body and brain. And in fact, it can be claimed that there are forms of evidence for all these types of “consciousness exploration” yoga meditation.&nbsp;</span></p>
+<p><span style="font-size: medium; font-family: 'book antiqua', palatino;">Finally, as per points made above, knowledge in the mainstream Western popular and scientific cultural contexts has expanded to recognize the existence of more forms of meditation. In fact, it turns out that meditation is a universal practice, discipline, or activity, or as near to universal as any psychophysiological activity, and further, that one of the few exceptions to this generalization has been the mainstream modern West, until recently – most likely due to the over influence of pseudo-scientific rationalism, the associated dominance of behaviorism in psychology, and other factors concerning rationalism and styles of behavioral comportment. The fact is that all major religions – including Christianity, Islam, and Judaism, along with the Asiatic religions discussed above – have possessed traditions of meditation since their inception. There are forms shamanic meditation shamanism-like meditation throughout the world; the anthropologist Bourguignon and colleagues have shown that over 90% of the world’s cultures possess centralized, institutionalized forms of “altered states of consciousness” (ASCs) which play an integral role within the ethos of each culture. Moreover, in this context it should be noted that many forms of ASCs &nbsp;are what anthropologists call “hyperarousal” states – characterized by dancing and other forms of sustained exertion – and these states are very much akin to “classically” understood meditation states; such hyperarousal forms of meditation are found in many traditions (such as the zhikr dance meditations of Sufism), and their close kinship has been explored and investigated extensively by &nbsp;Csíkszentmihályi and others.&nbsp;</span></p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p><span style="font-size: xx-large; color: #ffffff;"><span style="font-size: x-large;"><span style="font-family: 'book antiqua', palatino;">Perspectives</span></span></span></p>
+<p style="margin-top: 0px; margin-bottom: 1.2em; color: #140707; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14.9940004348755px; line-height: 17.9928016662598px;"><span style="font-family: 'book antiqua', palatino; font-size: medium; line-height: 17.12px; color: #ffffff;">ISHAR strives to present all of our data in an impartial, informative manner. &nbsp;Nonetheless, there are always different viewpoints on various topics, and ISHAR encourages users to review the perspectives on other informational sites, then come to their own conclusions regarding what they consider the least biased. &nbsp;The sites below were chosen to represent a wide spectrum of approaches to this topic, and none are endorsed or promoted by ISHAR itself.</span></p>
+<ul style="margin-top: 1em; margin-bottom: 1em; margin-left: 0px; padding-bottom: 0.25em; padding-left: 2.5em; color: #140707; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 14.9940004348755px; line-height: 17.9928016662598px;">
+<li><a style="color: #0728c6;" href="https://en.wikipedia.org/wiki/Meditation"><span style="font-family: 'book antiqua', palatino; font-size: medium;">Wikipedia&nbsp;</span><span style="font-family: 'book antiqua', palatino; font-size: medium; line-height: 20.0063037872314px;">Perspective</span></a></li>
+<li><a style="color: #0728c6;" href="http://www.webmd.com/depression/tc/meditation-topic-overview"><span style="font-family: 'book antiqua', palatino; font-size: medium;">WebMD&nbsp;</span><span style="font-family: 'book antiqua', palatino; font-size: medium; line-height: 20.0063037872314px;">Perspective</span></a></li>
+<li><a style="color: #0728c6;" href="http://zenhabits.net/meditation-for-beginners-20-practical-tips-for-quieting-the-mind/"><span style="font-family: 'book antiqua', palatino; font-size: medium;">Practitioner Perspective</span></a></li>
+<li><span style="font-family: 'book antiqua', palatino; font-size: medium;"><a style="color: #0728c6;" href="http://www.happify.com/hd/skeptics-guide-to-meditation-infographic-dan-harris/">Orthodox Perspective</a></span><span style="color: #000000; font-family: 'Lucida Grande', 'Lucida Sans Unicode', sans-serif; font-size: 13.008px; line-height: 1.538em;">&nbsp;</span></li>
+</ul>
+
+{% endif %}
+
+</body>
 
 {% include "ISHAR/footer.html" %}

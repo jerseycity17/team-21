@@ -26,6 +26,7 @@ class Article(models.Model):
 	doi = models.CharField(max_length=255, null=True)
 	url = models.CharField(max_length=255, null=True)
 	abstract = models.TextField(null=True)
+	short_abstract = models.TextField(null=True)
 	date = models.CharField(max_length=255, null=True)
 	date_add = models.CharField(max_length=255, null=True)
 	date_mod = models.CharField(max_length=255, null=True)
@@ -43,6 +44,16 @@ class Article(models.Model):
 
 	def __str__(self):
 		return self.pub_title
+
+	def short_abstract(self):
+		try:
+			short = self.abstract.split (".", 10)[9] + "..."
+			if (len(short) < 50):
+				return self.abstract
+			else:
+				return short
+		except:
+			return self.abstract
 
 	
 class Journal(models.Model):
