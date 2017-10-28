@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.dateparse import parse_datetime
 
 
 class Category(models.Model):
@@ -69,8 +70,6 @@ class Article(models.Model):
 			'kor': "Korean",
 			'ita': "Italian"
 		}.get(self.language.lower(), "English")
-
-
 	
 class Journal(models.Model):
 	journal_name = models.CharField(max_length=255)
