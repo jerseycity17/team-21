@@ -12,7 +12,7 @@
 	}
 
 	body {
-		background-color: #99ccff;
+		background-color: #b0a6a6;
 	}
 
 	footer {
@@ -21,6 +21,29 @@
 
 	p {
 		font-size: 16px;
+	}
+
+	.button {
+	  display: inline-block;
+	  padding: 0px 20px;
+	  font-size: 24px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  outline: none;
+	  color: #fff;
+	  background-color: #99ccff;
+	  border: none;
+	  border-radius: 15px;
+	  box-shadow: 0 9px #999;
+	}
+
+	.button:hover {background-color: #66ccff}
+
+	.button:active {
+	  background-color: #66ccff;
+	  box-shadow: 0 5px #666;
+	  transform: translateY(4px);
 	}
 
 </style>
@@ -46,13 +69,14 @@
 	      <a href="{% url 'ishar:journal' %}" class="w3-bar-item w3-button">Journal Portal</a>
 	      <a href="{% url 'ishar:bmh_journal' %}" class="w3-bar-item w3-button">Barbara Marx Hubbard Journals</a>
 	      <a href="{% url 'ishar:cosmology' %}" class="w3-bar-item w3-button">Comparative World Cosmologies</a>
+	      <a href="{% url 'ishar:cosmology' %}" class="w3-bar-item w3-button">Consciousness</a>
 	    </div>
 	  </div>
 
 	  <div class="w3-dropdown-hover">
 	    <button class="w3-button">About Us</button>
 	    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-	      <a href="{% url 'ishar:mission' %}" class="w3-bar-item w3-button">Mission</a>
+	      <a href="{% url 'ishar:mission' %}" class="w3-bar-item w3-button">Mission and Background</a>
 	      <a href="{% url 'ishar:super_board' %}" class="w3-bar-item w3-button">Supervisory Board</a>
 	      <a href="{% url 'ishar:affilliates' %}" class="w3-bar-item w3-button">Affiliates</a>
 	    </div>
