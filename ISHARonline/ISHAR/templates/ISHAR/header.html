@@ -46,12 +46,41 @@
 	  transform: translateY(4px);
 	}
 
+	input[type=text] {
+	    width: 100%;
+	    box-sizing: border-box;
+	    border: 10px solid #ccc;
+	    border-radius: 8px;
+	    font-size: 36px;
+	    background-color: white;
+/*	    background-image: url('http://iconshow.me/media/images/ui/ios7-icons/png/128/search-strong.png');*/
+	    background-position: 10px 10px; 
+	    background-repeat: no-repeat;
+	    padding: 12px 20px 12px 18px;
+	    -webkit-transition: width 0.4s ease-in-out;
+	    transition: width 0.4s ease-in-out;
+	}
+
+	input[type=text]:focus {
+	    
+	}
+
 </style>
 
 
 <header>
-	<img src="http://www.isharonline.org/sites/default/files/ishar_cf_logo_3.site__1.png">
-
+	<table>
+		<tr>
+			<td>
+				<img src="http://www.isharonline.org/sites/default/files/ishar_cf_logo_3.site__1.png">
+			</td>
+			<td style="vertical-align: bottom; padding-left: 10%; padding-right: 4%; padding-bottom: 1%">
+				<form>
+					<input type="text" name="search" placeholder="Search...">
+				</form>
+			</td>
+		</tr>
+	</table>
 
 
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
