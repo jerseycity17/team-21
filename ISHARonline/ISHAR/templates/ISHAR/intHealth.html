@@ -9,6 +9,12 @@
 		At the top of every topic page is a link to all the dedicated sources and articles ISHAR has on that topic.  The bolded topics have detailed summaries, analytical matrices and links to diverse perspectives about the topic.  Please peruse these sources and leave your comments!
 	</p>
 
+	<ul>
+		{% for category in category_list %}
+			<li><a href="{% url 'ishar:category' category.category_name %}">{{ category.category_name }}</a></li>
+		{% endfor %}
+	</ul>
+
 </body>
 
 {% include "ISHAR/footer.html" %}

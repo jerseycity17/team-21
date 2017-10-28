@@ -1,5 +1,9 @@
 {% include "ISHAR/header.html" %}
 
-
+<ul>
+	{% for article in article_list %}
+		<li><a href="{% url 'ishar:article_desc' article.id %}">{{ article.title }}</li>
+	{% endfor %}
+</ul>
 
 {% include "ISHAR/footer.html" %}

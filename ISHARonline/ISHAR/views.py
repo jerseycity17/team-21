@@ -7,8 +7,8 @@ def index(request):
 	return render(request, 'ISHAR/index.html', {})
 
 def int_health(request):
-	#category_list = Category.objects
-	return render(request, 'ISHAR/intHealth.html', {})
+	category_list = Category.objects.all()
+	return render(request, 'ISHAR/intHealth.html', {'category_list' : category_list})
 
 def int_culture(request):
 	return render(request, 'ISHAR/intCulture.html', {})
@@ -24,14 +24,14 @@ def affilliates(request):
 
 def article_desc(request, article_id):
 	article = get_object_or_404(Article, pk=article_id)
-	return render(request, 'ISHAR/article_desc.html', {'article' : article})
+	return render(request, 'ISHAR/articleDesc.html', {'article' : article})
 
 def article_list(request, category):
-	article_list = get_list_or_404(Article, category=category)[:10]
-	return render(request, 'ISHAR/articleList.html', {'article_list'})
+	article_list = get_list_or_404(Article, category__category_name=category)[:10]
+	return render(request, 'ISHAR/articleList.html', {'article_list': article_list})
 
 def category(request, category):
-	return render(request, 'ISHAR/categoryDesc.html', {'category : category'})
+	return render(request, 'ISHAR/categoryDesc.html', {'category' : category})
 
 def mission(request):
 	return render(request, 'ISHAR/mission.html', {})
