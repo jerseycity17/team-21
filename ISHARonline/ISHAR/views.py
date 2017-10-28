@@ -1,14 +1,16 @@
 from django.shortcuts import get_list_or_404, get_object_or_404, render
 from django.http import HttpResponse
 
-from .models import Article, Category
+from .models import Article, Category, SubCategory
 
 def index(request):
 	return render(request, 'ISHAR/index.html', {})
 
 def int_health(request):
 	category_list = Category.objects.all()
-	return render(request, 'ISHAR/intHealth.html', {'category_list' : category_list})
+	sub_category_list = SubCategory.objects.all()
+	return render(request, 'ISHAR/intHealth.html', {'category_list' : category_list,
+													'sub_category_list': sub_category_list})
 
 def int_culture(request):
 	return render(request, 'ISHAR/intCulture.html', {})
