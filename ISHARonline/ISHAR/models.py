@@ -13,6 +13,7 @@ class Article(models.Model):
 	item_type = models.CharField(max_length=255, null=True)
 	pub_year = models.IntegerField(null=True)
 	author = models.CharField(max_length=255, null=True)
+	title = models.CharField(max_length=255, null=True)
 	pub_title = models.CharField(max_length=255, null=True)
 	issn = models.CharField(max_length=255, null=True)
 	doi = models.CharField(max_length=255, null=True)
