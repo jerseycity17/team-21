@@ -2,6 +2,7 @@ from django.conf.urls import url
 
 from . import views
 
+app_name = 'ishar'
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^IntegratedHealth/$', views.int_health, name='int_health'),
