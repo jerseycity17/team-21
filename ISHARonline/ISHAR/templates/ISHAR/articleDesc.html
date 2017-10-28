@@ -2,4 +2,61 @@
 
 <h1>{{ article.title }}</h1>
 
+<table cellspacing="10" style="border: 1px solid white;border-radius: 25px;padding: 10px; width:100%">
+	<tr>
+		<td><b>Category:</b> {{ article.category }}</td>
+	</tr>
+	<tr>
+		<td><b>Tags:</b> {{ article.format_tags }}</td>
+	</tr>
+	<tr>
+		<td><b>Language:</b> {{ article.to_lang }}</td>
+	</tr>
+	<tr>
+		<td><b>Abstract:</b> {{ article.abstract }}</td>
+	</tr>
+	<tr>
+		<td><b>Author(s):</b> {{ article.author }}</td>
+	</tr>
+	<tr>
+		<td><b>Item Type:</b> {{ article.item_type }}</td>
+	</tr>
+	<tr>
+		<td><b>Publication Title:</b> {{ article.pub_title }}</td>
+	</tr>
+	<tr>
+		<td><b>Journal Abbreviation:</b> {{ article.journal_abbr }}</td>
+	</tr>
+	<tr>
+		<td><b>Publication Date:</b> {{ article.date }}</td>
+	</tr>
+	<tr>
+		<td><b>Publication Year:</b> {{ article.pub_year }}</td>
+	</tr>
+	<tr>
+		<td><b>Pages:</b> {{ article.pages }}</td>
+	</tr>
+	<tr>
+		<td><b>Volume:</b> {{ article.volume }}</td>
+	</tr>
+	<tr>
+		<td><b>Issue:</b> {{ article.issue }}</td>
+	</tr>
+	<tr>
+		<td><b>ISSN:</b> {{ article.issn }}</td>
+	</tr>
+	<tr>
+		<td><b>Library Catalog:</b> {{ article.lib_cat }}</td>
+	</tr>
+	<tr>
+		<td><b>Extra:</b> {{ article.extra }}</td>
+	</tr>
+	<tr>
+		<td><b>Links:</b> <a href="{{ article.url_link }}">{{ article.url_link }}</td>
+	</tr>
+
+	
+</table>
+
+
 {% include "ISHAR/footer.html" %}

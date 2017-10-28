@@ -26,7 +26,6 @@ class Article(models.Model):
 	doi = models.CharField(max_length=255, null=True)
 	url = models.CharField(max_length=255, null=True)
 	abstract = models.TextField(null=True)
-	short_abstract = models.TextField(null=True)
 	date = models.CharField(max_length=255, null=True)
 	date_add = models.CharField(max_length=255, null=True)
 	date_mod = models.CharField(max_length=255, null=True)
@@ -54,6 +53,23 @@ class Article(models.Model):
 				return short
 		except:
 			return self.abstract
+
+	def format_tags(self):
+		return self.tags.split(';')
+
+	def to_lang(self):
+		return {
+			'eng': "English",
+			'fre': "French",
+			'hun': "Hungarian",
+			'jpn': "Japanese",
+			'ger': "German",
+			'nor': "Norweigan",
+			'spa': "Spanish",
+			'kor': "Korean",
+			'ita': "Italian"
+		}.get(self.language.lower(), "English")
+
 
 	
 class Journal(models.Model):
