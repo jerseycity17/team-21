@@ -51,7 +51,7 @@
 	    box-sizing: border-box;
 	    border: 10px solid #ccc;
 	    border-radius: 8px;
-	    font-size: 36px;
+	    font-size: 30px;
 	    background-color: white;
 /*	    background-image: url('http://iconshow.me/media/images/ui/ios7-icons/png/128/search-strong.png');*/
 	    background-position: 10px 10px; 
@@ -65,26 +65,41 @@
 	    
 	}
 
+	input::-webkit-calendar-picker-indicator {
+	  	display: none;
+	}
+
 </style>
+
+<head>
+	<title>ISHAR Online</title>
+	<link rel="shortcut icon" href="http://www.isharonline.org/sites/default/files/ishar_logo_3.0_0.png" type="image/png">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 
 
 <header>
+
 	<table>
 		<tr>
 			<td>
 				<img src="http://www.isharonline.org/sites/default/files/ishar_cf_logo_3.site__1.png">
 			</td>
-			<td style="vertical-align: bottom; padding-left: 10%; padding-right: 4%; padding-bottom: 1%">
+			<td style="width: 100%; vertical-align: bottom; padding-left: 4%; padding-right: 4%; padding-bottom: 1%">
 				<form action="{% url 'ishar:search' %}" method="post">
 					{% csrf_token %}
-					<input type="text" name="search_param" placeholder="Ask Chopra anything...">
+					<input list="completes" type="text" name="search_param" placeholder="Ask Chopra anything...">
+					<datalist id="completes">
+						<option value="Meditation">
+						<option value="Mental Disorders">
+						<option value="Mental Health">
+						
+					</datalist>
 				</form>
 			</td>
 		</tr>
 	</table>
 
-
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 	<div class="w3-bar w3-light-grey">
 
