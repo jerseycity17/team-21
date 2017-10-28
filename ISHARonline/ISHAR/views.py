@@ -27,8 +27,18 @@ def affilliates(request):
 
 def article_desc(request, article_id):
 	article = get_object_or_404(Article, pk=article_id)
-	return render(request, 'ISHAR/articleDesc.html', {'article' : article})
-
+	tags = None
+	related_articles = None
+	try:
+		tags = article.tags
+		tags = tags[0]
+		related_articles = list(Article.objects.filter(tags__contains=tags))[:5]
+	except:
+		pass
+	if tags is None:
+		related_articles = list(Article.objects.filter(author__contains=article.author.split(',')[0]))[:5]
+	return render(request, 'ISHAR/articleDesc.html', {'article' : article,
+													  'related_articles': related_articles})
 def article_list(request, category):
 	article_list = get_list_or_404(Article, category__category_name=category)
 	paginator = Paginator(article_list, 10)

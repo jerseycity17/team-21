@@ -58,5 +58,18 @@
 	
 </table>
 
+<br/><br/>
+<table cellspacing="25" style="border: 1px solid white;border-radius: 25px;padding: 10px; width:100%">
+		<thead>
+			<tr>
+				<th style="text-align: center;"> Related Articles </th>
+			</tr>
+		</thead>
+		{% for article in related_articles %}
+		<tr>
+			<td><a href="{% url 'ishar:article_desc' article.id %}">{{ article.title }}</a></td>
+		</tr>
+		{% endfor %}
+</table>
 
 {% include "ISHAR/footer.html" %}
