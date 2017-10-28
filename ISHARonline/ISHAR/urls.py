@@ -12,11 +12,16 @@ urlpatterns = [
     url(r'^Contact/$', views.contact, name='contact'),
     url(r'^Affilliates/$', views.affilliates, name='affilliates'),
     url(r'^Article/(?P<article_id>[0-9]+)/$', views.article_desc, name='article_desc'),
-    url(r'^(?P<category>[^\s]+)/Articles/$', views.article_list, name='article_list'),
-    url(r'^(?P<category>[^\s]+)/$', views.category, name='category'),
+    url(r'^Category/(?P<category>[^\s]+)/Articles/$', views.article_list, name='article_list'),
+    url(r'^Category/(?P<category>[^\s]+)/$', views.category, name='category'),
     url(r'^Mission/$', views.mission, name='mission'),
     url(r'^SupervisingBoard/$', views.super_board, name='super_board'),
-    url(r'^bmhJournal/$', views.bmh_journal, name='bmh_journal'),
+    url(r'^BMHJournal/$', views.bmh_journal, name='bmh_journal'),
+    url(r'^Consciousness/$', views.consciousness, name='consciousness'),
+    url(r'^Consciousness/The_Hard_Problem/$', views.hard_problem, name='hard_problem'),
+    url(r'^Consciousness/Philosophy_of_Mind$', views.philosophy_mind, name='philosophy_mind'),
+    url(r'^Consciousness/The_Brain$', views.brain, name='brain'),
+    url(r'^Consciousness/The_Mind$', views.mind, name='mind'),
 
 
 ]

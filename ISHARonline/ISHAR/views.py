@@ -45,5 +45,21 @@ def journal_portal(request):
 def bmh_journal(request):
 	return render(request, 'ISHAR/bmhJournal.html', {})
 
+def consciousness(request):
+	return render(request, 'ISHAR/Consciousness.html', {})
+
+def hard_problem(request):
+	return render(request, 'ISHAR/consciousness-hardProb.html', {})
+
+def philosophy_mind(request):
+	return render(request, 'ISHAR/consciousness-philMind.html', {})
+
+def brain(request):
+	return render(request, 'ISHAR/consciousness-brain.html', {})
+
+def mind(request):
+	return render(request, 'ISHAR/consciousness-mind.html', {})
+
+
 
 
