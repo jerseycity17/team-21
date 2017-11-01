@@ -1,3 +1,3 @@
 # team-21
 
-THIS IS THE README
+Will, Cody, Krupa, Justin, Alex
