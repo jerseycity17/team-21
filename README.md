@@ -1,3 +1,3 @@
 # team-21
 
-Will, Cody, Krupa, Justin, Alex
+Will, John (Cody), Krupa, Justin, Alex
